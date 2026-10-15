@@ -1,4 +1,4 @@
-# Nebosvod C++ style. Allman braces, 4 spaces, 110 columns. See .agents/rules/code-style.md.
+# Nebosvod C++ style. Allman braces, 4 spaces, 110 columns. See CONTRIBUTING.md.
 Language: Cpp
 BasedOnStyle: LLVM
 Standard: c++20

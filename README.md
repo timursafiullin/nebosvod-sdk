@@ -5,7 +5,7 @@ space systems. A module implements one **port** — for example an orbit estimat
 a maneuver planner, an observation scheduler or a routing policy — and is tested inside Nebosvod against
 known simulated truth, without ever seeing that truth.
 
-Status: pre-release skeleton. Nothing here is usable yet.
+Status: pre-release skeleton: installable, no ports yet.
 
 ## Contents (planned)
 
@@ -23,6 +23,18 @@ Status: pre-release skeleton. Nothing here is usable yet.
 A module is packaged as a `.nebmod` archive: `module.toml` (id, version, port, execution mode, limits,
 decision latency), code or binary or ONNX model, and its own tests. Execution modes: in-process Python,
 subprocess in any language (NDJSON + Arrow IPC), container/service, or ONNX model only.
+
+## Development
+
+With Python 3.12+ and uv installed, run from the repository root:
+
+```bash
+uv sync --locked
+uv run ruff format --check .
+uv run ruff check .
+uv run mypy
+uv run pytest
+```
 
 ## License
 

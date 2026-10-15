@@ -1,4 +1,4 @@
-# Nebosvod Python style. See .agents/rules/code-style.md.
+# Nebosvod Python style. See CONTRIBUTING.md.
 line-length = 110
 target-version = "py312"
 
